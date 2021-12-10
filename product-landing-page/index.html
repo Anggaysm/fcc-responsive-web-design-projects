@@ -6,16 +6,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header id="header">
-      <nav id="nav-bar" class="nav-link">
-        <a href="#home">home</a>
-        <a href="#about">about</a>
-        <a href="#product">product</a>
-        <a href="#order">order</a>
+      <a href="#home" class="logo"
+        ><img src="img/nike_logo.png" alt="Logo" id="header-img"
+      /></a>
+      <nav id="nav-bar" class="navbar">
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <a href="#home" class="nav-link">home</a>
+        <a href="#about" class="nav-link">about</a>
+        <a href="#product" class="nav-link">product</a>
+        <a href="#order" class="nav-link">order</a>
       </nav>
     </header>
+
+    <section class="home" id="home">
+      <div class="content">
+        <h3>modern shoes</h3>
+        <span>luxury and looks cool </span>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam
+          repellendus sit libero saepe. Autem in alias aliquid? Inventore, sint
+          facere?
+        </p>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <h1 class="heading">about us</h1>
+      <div class="row">
+        <div class="video-container">
+          <iframe
+            id="video"
+            height="315"
+            src="https://youtu.be/QLWIL_3UPRc"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+          <h3>best shoes</h3>
+        </div>
+        <div class="content">
+          <h3>Why choose us</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+            pariatur accusantium totam, ea nobis natus placeat quia at magni
+            nostrum!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eum
+            maxime ipsa fugit. Est quia rerum accusamus veniam, laborum corporis
+            sit possimus alias, cupiditate rem labore iste fugit inventore cum
+            cumque consequuntur beatae illum.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="product" id="product">
+      <h1 class="heading">product</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <span class="discount">-10%</span>
+        </div>
+      </div>
+    </section>
+    <section class="order" id="order">
+      <h1>order now</h1>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input
+          name="email"
+          id="email"
+          type="email"
+          placeholder="Enter your email address"
+          required
+        />
+        <input type="submit" id="submit" />
+      </form>
+    </section>
   </body>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
